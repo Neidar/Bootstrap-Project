@@ -1,0 +1,61 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #353131;
+}
+
+nav {
+  text-transform: uppercase;
+  background-color: #353131;
+}
+
+nav a, nav i {
+  color: #f3f3f3 !important;
+}
+
+nav a:hover {
+  color: #97498e !important;
+}
+
+nav i:active {
+  color: #97498e !important;
+}
+
+nav .active {
+  color: #97498e !important;
+}
+
+nav .fa-bars {
+  padding: 10px;
+}
+
+#home {
+  height: 100vh;
+  background-color: gray;
+}
+
+#about {
+  height: 100vh;
+  background-color: tomato;
+}
+
+#achivements {
+  height: 100vh;
+  background-color: paleturquoise;
+}
+
+#prices {
+  height: 100vh;
+  background-color: orange;
+}
+
+#contact {
+  height: 100vh;
+  background-color: olivedrab;
+}
+/*# sourceMappingURL=main.css.map */
