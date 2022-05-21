@@ -1,0 +1,66 @@
+@import 'colors';
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: $bgc-color-dark;
+}
+
+nav{
+    text-transform: uppercase;
+    background-color: $bgc-color-dark;
+
+    a , i{
+        color: $font-color-dark !important;
+    }
+ 
+    a:hover{
+        color: $active-color !important;
+    }
+
+    .active-button{
+        color: $active-color !important;
+    }
+    .active{
+        color: $active-color !important;
+    }
+
+    .fa-bars{
+        padding: 10px;
+    }
+}
+
+#home{
+
+    height: 100vh;
+    background-color: gray;
+}
+
+#about{
+
+    height: 100vh;
+    background-color: tomato;
+}
+
+#achivements{
+
+    height: 100vh;
+    background-color: paleturquoise;
+}
+
+#prices{
+
+    height: 100vh;
+    background-color: orange;
+}
+
+#contact{
+
+    height: 100vh;
+    background-color: olivedrab;
+}
