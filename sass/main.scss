@@ -13,7 +13,7 @@ body{
 
 nav{
     text-transform: uppercase;
-    background-color: $bgc-color-dark;
+    // background-color: $bgc-color-dark;
 
     a , i{
         color: $font-color-dark !important;
@@ -35,32 +35,52 @@ nav{
     }
 }
 
-#home{
+header{
+    color: $font-color-dark;
 
-    height: 100vh;
-    background-color: gray;
+    .main-img{
+     position: relative;
+     height: 100vh;
+     background-image: url(/images/mainSmall.jpg);
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     z-index: -2;
+     ;
+    }
+
+    .main-img-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        height: 100%;
+        z-index: 5;
+
+        h1{
+            
+            text-transform: uppercase;
+        }
+    }
+    .main-img-shadow{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        z-index: -10;
+    }
+    
+
+    
 }
 
-#about{
-
-    height: 100vh;
-    background-color: tomato;
-}
-
-#achivements{
-
-    height: 100vh;
-    background-color: paleturquoise;
-}
-
-#prices{
-
-    height: 100vh;
-    background-color: orange;
-}
-
-#contact{
-
-    height: 100vh;
-    background-color: olivedrab;
+@media(min-width: 1200px){
+    header{
+        .main-img{
+            background-image: url(/images/mainBig.jpg);
+        }  
+    }
+ 
 }
